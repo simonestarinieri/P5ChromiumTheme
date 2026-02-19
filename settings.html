@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings for Persona Theme</title>
+    <script type="text/javascript" src="settings.js"></script>
+    <link rel="stylesheet" href="stylesheets/settings.css">
+</head>
+<body>
+<h1>Settings for Persona Theme</h1>
+<p>I will probably never really write this page, in case you did find this tho: gratz to you!
+u found the dark secret page!</p>
+<form id='form' method="post" action="">
+    <input type="text" name="name" id="name" placeholder="Name">
+    <input type="date" name="birthday" id="birthday">
+
+    <p>Select your preferred search engine:</p>
+    <div id="select">
+        <input type="radio" name="search_engine" id="brave" value="https://search.brave.com/search" style="display:none">
+        <label for="brave"><img class="icon" src="img/logos/brave.svg"></label>
+
+        <input type="radio" name="search_engine" id="google" value="https://search.google.com/search" style="display:none">
+        <label for="google"><img class="icon" src="img/logos/google.svg"></label>
+
+        <input type="radio" name="search_engine" id="duckduckgo" value="https://duckduckgo.com" style="display:none">
+        <label for="duckduckgo"><img class="icon" src="img/logos/duckduckgo.svg"></label>
+
+        <input type="radio" name="search_engine" id="bing" value="https://bing.com" style="display:none">
+        <label for="bing"><img class="icon" src="img/logos/bing.svg"></label>
+
+        <input type="radio" name="search_engine" id="yahoo" value="https://search.yahoo.com/search" style="display:none">
+        <label for="yahoo"><img class="icon" src="img/logos/yahoo.svg"></label>
+    </div>
+    <button id="saveSettings">Save</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face{
+    font-family: 'persona5Font';
+    src: url("fonts/persona.ttf") format("woff");
+}
+@font-face{
+    font-family:'p5hatty';
+    src:url("fonts/p5hatty-1.ttf") format("woff");
+}
+html,body,#main{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#arrowBack{
+    z-index:1;
+    transform: rotate(-15deg);
+    position:relative;
+    top:50%;
+    height:100px;
+    margin-right:-50px;
+    width:100px;
+    background-color:black;
+    clip-path: polygon(67% 45%, 90% 53%, 90% 23%, 63% 31%, 41% 50%, 20% 46%, 45% 60%);
+}
+#music{
+    display:none;
+}
+#arrowBorder{
+    height:95px;
+    width:95px;
+    background-color:white;
+    clip-path: polygon(67% 45%, 90% 53%, 90% 23%, 63% 31%, 41% 50%, 20% 46%, 45% 60%);
+}
+#main{
+    background-position:bottom;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display:flex;
+    flex-direction:column;
+    mix-blend-mode: multiply;
+}
+#name{
+    color:white;
+    font-family: 'persona5Font', sans-serif;
+    transform: rotate(-15deg);
+    position:absolute;
+    left:0;
+    top:0;
+    margin:50px;
+    font-size:100px;
+}
+#person{
+    display:flex;
+    height:45vh;
+    justify-content:center;
+}
+#search{
+    flex-grow:10;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    justify-content:center;
+}
+#searchbar{
+    align-self:center;
+    width:75%;
+    border:2px solid #222c;
+    border-radius:50px;
+    margin:0;
+    padding:0;
+    padding-left:40px;
+    height:40px;
+    background-image:url(/img/def/search.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left;
+    background-position-x: 10px;
+}
+#bubbleBorder{
+    background-color:white;
+    clip-path: polygon(100% 0, 100% 95%, 0 66%, 0 33%);
+    margin:5px;
+}
+#quote{
+    display:flex;
+    align-self:center;
+    flex-direction:column;
+    justify-content:center;
+    background-color:black;
+    clip-path: polygon(100% 0, 100% 95%, 0 66%, 0 33%);
+    transform: rotate(-15deg);
+    margin-top:20px;
+    height:fit-content;
+    width:calc-size(auto,size + 200px);
+    max-width:400px;
+}
+#bubble{
+    overflow-y:auto;
+    margin:5px;
+    clip-path: polygon(100% 0, 100% 95%, 0 66%, 0 33%);
+    background-color:black;
+    max-height:300px;
+}
+#bubble::-webkit-scrollbar{
+    width: 5px;
+}
+#bubble::-webkit-scrollbar-track {
+    background: #ffff;
+}
+#bubble::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius:400px;
+}
+#bubble::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+#text{
+    min-width:100px;
+    margin:25% 5% 25% 20%;
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-size:15px;
+    font-style: normal;
+    color:white;
+}
+#searchbar:focus{
+    outline:none;
+}
+#char{
+    align-self:end;
+    background-image:url("../img/def/loader.gif");
+    background-size:contain;
+    background-position-x:right;
+    background-position-y:bottom;
+    background-repeat:no-repeat;
+    width:20%;
+    height:100%;
+}
+#greeting{
+    font-family: p5hatty, serif;
+    color:white;
+    font-size:8vh;
+    text-align:center;
+    flex-grow:2;
+}
+#controls{
+    display:flex;
+    justify-content:center;
+}
+#controls>button{
+    padding:10px;
+    background:none;
+    border:none;
+}
+#controls>button:hover{
+    cursor:pointer;
+    background-color:#fff2;
+    border-radius:20px;
+}
+#controls>button:active{
+    border:none;
+}
+#volume{
+    -webkit-appearance: none;
+    appearance: none;
+    margin:5px;
+    background-color: white;
+    clip-path: polygon(0 47%, 100% 15%, 100% 87%, 0% 70%);
+}
+#volumeBorder{
+    position:absolute;
+    right:10px;
+    align-self:center;
+    background-color: white;
+    clip-path: polygon(0 47%, 100% 15%, 100% 87%, 0% 70%);
+}
+#volume::-webkit-slider-thumb {
+    box-shadow: -80px 0 0 80px black;
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+    background:black;
+  width: 10px; /* Set a specific slider handle width */
+  height: 50px;
+  cursor: pointer; /* Cursor on hover */
+}
+#volume::-webkit-slider-thumb:hover{
+    background:#333;
+}
+/*
+#randomize{
+    position:absolute;
+    background:none;
+    border:none;
+    color:white;
+    top:5px;
+    right:5px;
+    font-size: 36px;
+}
+#randomize:hover{
+    color:grey;
+    cursor:pointer;
+}
+#randomize:active{
+    border:none;
+}
+*/

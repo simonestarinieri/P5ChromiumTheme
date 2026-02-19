@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Neuer Tab</title>
+    <script src="scripts/tsparticles.confetti.bundle.min.js"></script>
+    <script src="scripts/fa-min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+    <div id="main" style="background-image:url(img/def/background.jpg);">
+        <h1 id="name">Laden...</h1>
+        <!--<button id="randomize"><i class="fas fa-dice"></i></button>-->
+        <form id="search" autocomplete="off" method="get" action="">
+            <div id="person">
+                <div id=char></div>
+                <div id="quote">
+                    <div id="bubbleBorder">
+                        <div id="bubble">
+                            <p id="text">Laden...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input id="searchbar" autocomplete="off" type="text" name="q" value="">
+            
+        </form>
+        <div id="greeting">
+            <span id="greetingText">Laden...</span><span id="user">User!</span>
+        </div>
+        <div id="bgMusic">
+            <audio controls id="music">
+            <source id="song" src="music/jaldabaoth.mp3" type="audio/mpeg">
+            Sorry, the audio cannot be played
+        </audio>
+        <div id="controls">
+            <button id="previous"><img id="previousIcon" src="img/def/previous.png"></button>
+            <button id="resume"><img id="resumeIcon" src="img/def/pause.png"></button>
+            <button id="next"><img id="nextIcon" src="img/def/next.png"></button>
+            <div id="volumeBorder"><input type="range" id="volume"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

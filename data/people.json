@@ -1,0 +1,15 @@
+{
+  "Akihiko":{"color":"grey","song":null},
+  "Ann":{"color":"red","song":null},
+  "Futaba":{ "color":"lime","song":null},
+  "Akechi":{"color":"white","song":null},
+  "Haru":{"color":"purple","song":null},
+  "Makoto":{"color":"navy","song":null},
+  "Morgana":{"color":"gray","song":null},
+  "Ryuji": {"color":"yellow","song":null},
+  "Yusuke": {"color":"aqua","song":null},
+  "Maruki": {"color":"chocolate","song":null},
+  "Sumire": {"color":"purple","song":null},
+  "Lavenza":{"color":"rgba(4, 34, 244)","song":null},
+  "Sojiro":{"color":"gray","song":null}
+}

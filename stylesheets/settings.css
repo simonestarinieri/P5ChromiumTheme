@@ -1,0 +1,40 @@
+html,body{
+    width:fit-content;
+    margin:10px;
+}
+.icon{
+    padding:2px;
+    height:48px;
+    width:48px;
+}
+form{
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+}
+#select{
+    margin:5px;
+    width:fit-content;
+    display:flex;
+}
+input{
+    margin:5px;
+}
+input{
+    padding:2px;
+    border-radius:5px;
+    border:2px solid gray;
+}
+button{
+    align-self:center;
+    background-color:limegreen;
+    border:2px solid green;
+    border-radius:5px;
+    height:50px;
+    width:80px;
+    text-align:center;
+}
+input[type="radio"]:checked + label{
+    background-color:rgba(0,0,0,40%);
+    border-radius:10px;
+}
